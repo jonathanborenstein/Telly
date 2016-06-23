@@ -3,7 +3,7 @@ Spring MVC Reservation System
 
 This is a bus or any sort of travel reservation system set up using the Spring Framework. Some of the features include creating an account, searching for trips, logging in, and booking trips. The program uses features of the Spring Framework such as Dependecy Injection and Spring Security. The program also uses Hibernate in order to do operations on the database. All of these jars are included in the pom.xml.
 	
-	1. In order to run the program on a local server, you must add this code to the context.xml file of your Apache server. My table was called springtutorial, and my resource name is jdbc/spring. It is important that the resource name is the same as the res-ref-name attribute in the WebContent/WEB-INF/Web.xml file. More information on this can be found here: https://tomcat.apache.org/tomcat-7.0-doc/jndi-resources-howto.html#JDBC_Data_Sources
+1. In order to run the program on a local server, you must add this code to the context.xml file of your Apache server. My table was called springtutorial, and my resource name is jdbc/spring. It is important that the resource name is the same as the res-ref-name attribute in the WebContent/WEB-INF/Web.xml file. More information on this can be found here: https://tomcat.apache.org/tomcat-7.0-doc/jndi-resources-howto.html#JDBC_Data_Sources
 	
 	<Resource name="jdbc/spring" auth="Container" type="javax.sql.DataSource"
 		maxActive="100" maxIdle="30" maxWait="10000" username="****"
