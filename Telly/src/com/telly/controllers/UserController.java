@@ -1,6 +1,7 @@
 package com.telly.controllers;
 
 import java.security.Principal;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -26,7 +27,6 @@ public class UserController {
 	
 	@Autowired
 	ReserveService reserveService;
-	
 
 	@RequestMapping("/login")
 	public String showLogin() {
@@ -74,6 +74,22 @@ public class UserController {
 		reserve.getUser().setUsername(username);
 		
 		reserveService.reserve(reserve);
+	
+		
+		return "home";
+
+	}
+	
+	@RequestMapping(value = "/getreservations", method = RequestMethod.GET)
+	public String getReserveBook(@Validated(FormValidationGroup.class) Reserve reserve, Model model, Principal principal) {
+		
+		
+		String username = principal.getName();
+		reserve.getUser().setUsername(username);
+		
+		List<Reserve> reserves = reserveService.getReserves(username);
+		model.addAttribute("reserves", reserves);
+		System.out.println(reserves);
 	
 		
 		return "home";

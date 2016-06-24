@@ -21,6 +21,8 @@
 			access="isAuthenticated()" />
 			<security:intercept-url pattern="/reservebook"
 			access="isAuthenticated()" />
+			<security:intercept-url pattern="/getreservations"
+			access="isAuthenticated()" />
 		<security:intercept-url pattern="/" access="permitAll" />
 		<security:intercept-url pattern="/reservebus"
 			access="permitAll" />

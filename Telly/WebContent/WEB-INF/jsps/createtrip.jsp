@@ -7,7 +7,7 @@
 
 
 <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
-<title>Reserve Bus</title>
+<title>Create Trip</title>
 </head>
 <body>
 
@@ -47,7 +47,7 @@
 					</div></td>
 			<tr>
 				<td class="label"></td>
-				<td><input class="control" value="Search" type="submit" /></td>
+				<td><input class="control" value="Create Trip" type="submit" /></td>
 			</tr>
 		</table>
 

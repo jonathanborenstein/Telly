@@ -22,12 +22,12 @@ public class BusController {
 	BusService busService;
 	
 
-	@RequestMapping("/reservebus")
+	@RequestMapping("/createtrip")
 	public String reserveBus(Model model, Principal principal) {
 
 		model.addAttribute("bus", new Bus());
 
-		return "reservebus";
+		return "createtrip";
 	}
 
 	@RequestMapping(value = "/createreserve", method = RequestMethod.POST)
