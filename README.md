@@ -14,4 +14,4 @@ This is a bus or any sort of travel reservation system set up using the Spring F
 
 2. You must then set up the database on your system. I have included a script to create the tables in Telly.sql. Make sure that the database name is the same as the one in the url field in the code above.
 
-3. In order to add mock trip entries to the database, you can use reservebus.jsp. Make sure the Date Leave and Date Return entries are in the YYYY-MM-DD format (2016-01-01).
+3. In order to add mock trip entries to the database, you can use createtrip.jsp. Make sure the Date Leave and Date Return entries are in the YYYY-MM-DD format (2016-01-01).
